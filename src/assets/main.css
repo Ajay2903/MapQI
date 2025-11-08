@@ -1,9 +1,12 @@
 @import './base.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+/* Remove all styles from #app to let 
+  your components control the layout. 
+*/
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   font-weight: normal;
 }
 
@@ -21,15 +24,13 @@ a,
   }
 }
 
+/* You can also remove this entire @media block 
+  if it's not essential for other pages.
+*/
 @media (min-width: 1024px) {
   body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+    /* These styles might also be unnecessary */
+    /* display: flex; */
+    /* place-items: center; */
   }
 }
