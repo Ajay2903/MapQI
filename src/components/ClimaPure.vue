@@ -284,8 +284,6 @@ const marker = ref<google.maps.Marker | null>(null)
 // API Configuration
 const WEATHER_API_KEY = import.meta.env.VITE_OPENWEATHER_API_KEY || 'YOUR_API_KEY'
 const GOOGLE_MAPS_KEY = import.meta.env.VITE_GOOGLE_MAPS_KEY || 'YOUR_GOOGLE_MAPS_KEY'
-console.log('Using Google Maps Key:', GOOGLE_MAPS_KEY)
-console.log('Using Open Key:', WEATHER_API_KEY)
 let timeInterval: number
 
 onMounted(async () => {
